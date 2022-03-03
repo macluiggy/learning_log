@@ -10,3 +10,6 @@ python manage.py migrate
 
 to run de server:
 python manage.py runserver
+
+if you make a change in the models, you need to migrate again:
+python manage.py makemigrations learning_logs

@@ -31,6 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # My apps, put them first in the list so they can override Django's default apps behavior
+    'learning_logs',
+    # Default apps.
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
