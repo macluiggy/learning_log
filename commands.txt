@@ -13,3 +13,11 @@ python manage.py runserver
 
 if you make a change in the models, you need to migrate again:
 python manage.py makemigrations learning_logs
+
+to apply this migration:
+python manage.py migrate
+
+whenever we want to modify the data that learning_logs manages, we follow three steps:
+1. Create a new model or modify an existing one
+2. call makemigrations
+3. call migrate
