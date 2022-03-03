@@ -1,0 +1,12 @@
+python -m venv ll_env 
+
+2. Activate the virtual environment
+
+source ll_env/bin/activate
+to desactivate: deactivate
+
+to migrate:
+python manage.py migrate
+
+to run de server:
+python manage.py runserver
