@@ -14,32 +14,32 @@ blinker==1.4 # esta es la version mas reciente: Jul 23, 2015 puede que necesite 
 boto==2.49.0 # esta es la version mas reciente: Jul 11, 2018 puede que necesite ser cambiada
 boto3==1.20.50 # version mas reciente: 1.21.12 - Mar 3, 2022
 botocore==1.23.50 # version mas reciente: 1.24.12 - Mar 3, 2022
-celery==5.2.3
-certifi==2021.10.8
-cffi==1.15.0
-channels==3.0.4
-channels-redis==3.3.1
-chardet==4.0.0
-charset-normalizer==2.0.11
-click==8.0.3
-click-didyoumean==0.3.0
-click-plugins==1.1.1
-click-repl==0.2.0
-colorama==0.4.4
-configobj==5.0.6
-constantly==15.1.0
-coreapi==2.3.3
-coreschema==0.0.4
-crontab==0.23.0
-cryptography==36.0.1
-daal==2021.2.3
-daphne==3.0.2
-decorator==5.1.1
-defusedxml==0.7.1
-Deprecated==1.2.13
-Django==3.2.9
-django-braces==1.15.0
-django-cors-headers==3.11.0
+celery==5.2.3 # esta es la version mas reciente: Dec 29, 2021
+certifi==2021.10.8 # esta es la version mas reciente: Oct 8, 2021
+cffi==1.15.0 # esta es la version mas reciente: Oct 13, 2021
+channels==3.0.4 # esta es la version mas reciente: Jul 11, 2021
+channels-redis==3.3.1 # esta es la version mas reciente: Sep 30, 2021
+chardet==4.0.0 # esta es la version mas reciente: Dec 10, 2020
+charset-normalizer==2.0.11 # version mas reciente: 2.0.12 - Feb 12, 2022
+click==8.0.3 # version mas reciente: 8.0.4 - Feb 18, 2022
+click-didyoumean==0.3.0 # esta es la version mas reciente: Sep 29, 2021
+click-plugins==1.1.1 # esta es la version mas reciente: Apr 3, 2019 puede que necesite ser cambiada 
+click-repl==0.2.0 # esta es la version mas reciente: May 30, 2021
+colorama==0.4.4 # esta es la version mas reciente: Oct 12, 2020 puede que necesite ser cambiada
+configobj==5.0.6 # esta es la version mas reciente: Aug 25, 2014 puede que necesite ser cambiada
+constantly==15.1.0 # esta es la version mas reciente: Aug 11, 2015 puede que necesite ser cambiada
+coreapi==2.3.3 # esta es la version mas reciente: Oct 5, 2017 puede que necesite ser cambiada
+coreschema==0.0.4 # esta es la version mas reciente: Feb 8, 2017 puede que necesite ser cambiada
+crontab==0.23.0 # esta es la verion mas reciente: Apr 27, 2021
+cryptography==36.0.1 # esta es la version mas reciente: Dec 14, 2021
+daal==2021.2.3 # verson mas reciente: Mar 3, 2022 - 2021.5.4
+daphne==3.0.2 # esta es la version mas reciente: Apr 7, 2021
+decorator==5.1.1 # esta es la version mas reciente: Jan 7, 2022
+defusedxml==0.7.1 # esta es la version mas reciente: Mar 8, 2021
+Deprecated==1.2.13 # esta es la version mas reciente: Sep 5, 2021
+Django==3.2.9 # version mas reciente: 4.0.3 - Mar 1, 2022
+django-braces==1.15.0 # esta es la version mas reciente: Nov 5, 2021
+django-cors-headers==3.11.0 # esta es la version mas reciente: Jan 10, 2022
 django-filter==21.1
 django-multiselectfield==0.1.12
 django-oauth-toolkit==1.7.0
