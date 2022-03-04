@@ -40,39 +40,39 @@ Deprecated==1.2.13 # esta es la version mas reciente: Sep 5, 2021
 Django==3.2.9 # version mas reciente: 4.0.3 - Mar 1, 2022
 django-braces==1.15.0 # esta es la version mas reciente: Nov 5, 2021
 django-cors-headers==3.11.0 # esta es la version mas reciente: Jan 10, 2022
-django-filter==21.1
-django-multiselectfield==0.1.12
-django-oauth-toolkit==1.7.0
-django-oauth2-provider==0.2.6.1
-django-phonenumber-field==6.0.0
-django-redis==5.2.0
-django-rest-framework-social-oauth2==1.1.0
-django-storages==1.12.3
-django-twilio==0.8.0
-django-utils==0.0.2
-django-utils-six==2.0
-django-utils2==2.12.1
-djangorestframework==3.11.0
-djangorestframework-simplejwt==5.0.0
-docutils==0.16
-drf-yasg==1.20.0
-ez-setup==0.9
-ffmpy==0.3.0
-gunicorn==20.0.2
-hiredis==2.0.0
-httplib2==0.20.4
-huey==2.4.3
-hyperlink==21.0.0
-idna==3.3
-imageio==2.15.0
-importlib-metadata==4.10.1
-incremental==21.3.0
-inflection==0.5.1
-itypes==1.2.0
-jeepney==0.7.1
-Jinja2==2.11.3
-jmespath==0.10.0
-jsonpatch==1.32
+django-filter==21.1 # esta es la version mas reciente: Sep 24, 2021
+django-multiselectfield==0.1.12 # esta es la version mas reciente: Feb 20, 2020 puede que necesite ser cambiada
+django-oauth-toolkit==1.7.0 # esta es la version mas reciente: Jan 24, 2022
+django-oauth2-provider==0.2.6.1 # esta es la version mas reciente: Apr 18, 2014 puede que necesite ser cambiada
+django-phonenumber-field==6.0.0 # version mas reciente: 6.1.0 - Feb 15, 2022
+django-redis==5.2.0 # esta es la version mas reciente: Dec 22, 2021
+django-rest-framework-social-oauth2==1.1.0 # esta es la version mas reciente: Jan 25, 2018 puede que necesite ser cambiada
+django-storages==1.12.3 # esta es la version mas reciente: Oct 29, 2021
+django-twilio==0.8.0 # version mas reciente: 0.13.2 - Oct 24, 2021
+django-utils==0.0.2 # version mas reciente: 0.0.3 - Jan 20, 2020 puede que necesite ser cambiada
+django-utils-six==2.0 # esta es la version mas reciente: un 17, 2020 puede que necesite ser cambiada
+django-utils2==2.12.1 # esta es la version mas reciente: Nov 14, 2021
+djangorestframework==3.11.0 # version mas reciente: 3.13.1 - Dec 15, 2021
+djangorestframework-simplejwt==5.0.0 # version mas reciente: 5.1.0 - Mar 1, 2022
+docutils==0.16 # version mas reciente: 0.18.1 - Nov 23, 2021
+drf-yasg==1.20.0 # esta es la version mas reciente: Oct 25, 2020 puede que necesite ser cambiada
+ez-setup==0.9 # esta es la version mas reciente: Nov 23, 2010 puede que necesite ser cambiada
+ffmpy==0.3.0 # esta es la version mas reciente: Jan 13, 2021 puede que necesite ser cambiada
+gunicorn==20.0.2 # version mas reciente: 20.1.0 - Mar 26, 2021
+hiredis==2.0.0 # esta es la version mas reciente: Mar 28, 2021
+httplib2==0.20.4 # esta es la version mas reciente: Feb 2, 2022
+huey==2.4.3 # esta es la version mas reciente: Dec 28, 2021
+hyperlink==21.0.0 # esta es la version mas reciente: Jan 8, 2021 puede que necesite ser cambiada
+idna==3.3 # esta es la version mas reciente: Oct 12, 2021
+imageio==2.15.0 # version mas reciente: 2.16.1 - Feb 27, 2022
+importlib-metadata==4.10.1 # version mas reciente: 4.11.2 - Feb 27, 2022
+incremental==21.3.0 # esta es la version mas reciente: Mar 1, 2021
+inflection==0.5.1 # esta es la version mas reciente: Aug 22, 2020 puede que necesite ser cambiada
+itypes==1.2.0 # esta es la version mas reciente: Apr 19, 2020 puede que necesite ser cambiada
+jeepney==0.7.1 # esta es la version mas reciente: Jul 28, 2021
+Jinja2==2.11.3 # version mas reciente: 3.0.3 - Nov 9, 2021
+jmespath==0.10.0 # esta es la version mas reciente: May 12, 2020 puede que necesite ser cambiada
+jsonpatch==1.32 # esta es la version mas reciente: Mar 13, 2021
 jsonpointer==2.2
 jsonschema==4.4.0
 jwcrypto==1.0
