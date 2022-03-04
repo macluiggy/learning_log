@@ -1,19 +1,19 @@
 aioredis==1.3.1 # 1.3.1 (2019-12-02) || 2.0.1 - (2021-12-20)
-amqp==5.0.9 # version mas reciente
-appdirs==1.4.4 # version mas reciente
-asgiref==3.3.4
-asn1crypto==1.4.0
-async-timeout==3.0.1
-attrs==21.4.0
-autobahn==22.1.1
-Automat==20.2.0
-Babel==2.9.1
-backend==0.2.4.1
-billiard==3.6.4.0
-blinker==1.4
-boto==2.49.0
-boto3==1.20.50
-botocore==1.23.50
+amqp==5.0.9 # esta es la version mas reciente
+appdirs==1.4.4 # esta es la version mas reciente
+asgiref==3.3.4 # version mas reciente: 3.5.0 - Jan 22, 2022
+asn1crypto==1.4.0 # version mas reciente 1.4.0 Jul 28, 2020 - puede que necesite ser cambiada
+async-timeout==3.0.1 # version mas reciente: 4.0.2 - Dec 20, 2021
+attrs==21.4.0 # esta es la version mas reciente
+autobahn==22.1.1 # verson  mas reciente: 22.2.2 - Feb 23, 2022
+Automat==20.2.0 # esta es la version mas reciente puede que necesite ser cambiada
+Babel==2.9.1 # esta es la version mas reciente
+backend==0.2.4.1 # esta es la verion mas reciente: Feb 18, 2014 puede que necesite ser cambiada
+billiard==3.6.4.0 # esta es la version mas reciente: Apr 1, 2021
+blinker==1.4 # esta es la version mas reciente: Jul 23, 2015 puede que necesite ser cambiada
+boto==2.49.0 # esta es la version mas reciente: Jul 11, 2018 puede que necesite ser cambiada
+boto3==1.20.50 # version mas reciente: 1.21.12 - Mar 3, 2022
+botocore==1.23.50 # version mas reciente: 1.24.12 - Mar 3, 2022
 celery==5.2.3
 certifi==2021.10.8
 cffi==1.15.0
