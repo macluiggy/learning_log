@@ -22,3 +22,21 @@ whenever we want to modify the data that learning_logs manages, we follow three 
 2. call makemigrations
 3. call migrate
 
+to enter to python shell:
+python manage.py shell
+
+to manage a model:
+from learning_logs.models import Topic
+
+to get all the topics:
+Topic.objects.all()
+
+to get a specific topic:
+Topic.objects.get(id=1)
+
+to get all the entries of a topic:
+topic = Topic.objects.get(id=1)
+topic.entry_set.all()
+
+to start a new app
+django-admin startapp app_name

@@ -23,4 +23,4 @@ class Entry (models.Model):
     verbose_name_plural = 'entries' # verbose_name_plural is a special attribute that Django uses to pluralize the name of the model. For example, if you set the verbose_name to 'entry' Django will use the verbose_name_plural of 'entries'. but withouth this attribute Django will use the verbose_name of 'Entry' as 'Entrys' which is misspelled.
   def __str__(self):
     """Return a string representation of the model."""
-    return f"{self.text[:50]}..." # return the first 50 characters of the text field.
+    return f"{self.text[:50]}..." if len(self.text) > 50 else self.text # return the first 50 characters of the text field if the text field is longer than 50 characters.
