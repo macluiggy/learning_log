@@ -73,55 +73,55 @@ jeepney==0.7.1 # esta es la version mas reciente: Jul 28, 2021
 Jinja2==2.11.3 # version mas reciente: 3.0.3 - Nov 9, 2021
 jmespath==0.10.0 # esta es la version mas reciente: May 12, 2020 puede que necesite ser cambiada
 jsonpatch==1.32 # esta es la version mas reciente: Mar 13, 2021
-jsonpointer==2.2
-jsonschema==4.4.0
-jwcrypto==1.0
-keyring==23.5.0
-keyrings.alt==4.1.0
-kombu==5.2.3
-MarkupSafe==1.1.1
+jsonpointer==2.2 # esta es la version mas reciente: Nov 4, 2021
+jsonschema==4.4.0 # esta es la version mas reciente: Jan 12, 2022
+jwcrypto==1.0 # esta es la version mas reciente: Aug 2, 2021
+keyring==23.5.0 # esta es la version mas reciente: Jan 1, 2022
+keyrings.alt==4.1.0 # esta es la version mas reciente: ul 15, 2021
+kombu==5.2.3 # esta es la version mas reciente: Mar 6, 2022
+MarkupSafe==1.1.1 # esta es la version mas reciente: Feb 17, 2022
 #migrate==0.3.8
-msgpack==1.0.3
-msgpack-python==0.5.6
-netifaces==0.11.0
-numpy==1.19.3
-oauth2client==4.1.2
-oauthlib==3.2.0
-openapi-codec==1.3.2
-packaging==21.3
-pafy==0.5.5
-pathlib==1.0.1
-phonenumbers==8.12.42
-phonenumberslite==8.12.42
-Pillow==9.0.1
-prompt-toolkit==3.0.27
-psycopg2-binary==2.9.3
-pyasn1==0.4.8
-pyasn1-modules==0.2.8
-pycparser==2.21
-pycryptodome==3.14.1
-PyHamcrest==2.0.3
-PyJWT==2.3.0
-pyOpenSSL==22.0.0
-pyparsing==3.0.7
-PyQt5==5.12.3
-PyQt5-sip==12.9.1
-PyQtWebEngine==5.12.1
-pyrsistent==0.18.1
-pyserial==3.5
-PySocks==1.7.1
-python-dateutil==2.8.2
-python-oauth2==1.1.1
-python-utils==3.1.0
-python3-openid==3.2.0
-pytz==2021.3
-pyxdg==0.27
-PyYAML==6.0
-redis==4.1.2
-requests==2.27.1
-requests-oauthlib==1.3.1
-requests-unixsocket==0.3.0
-rsa==4.7
+msgpack==1.0.3 # esta es la version mas reciente: Nov 24, 2021
+msgpack-python==0.5.6 # esta es la version mas reciente: Mar 10, 2018 puede que necesite ser cambiada
+netifaces==0.11.0 # esta es la version mas reciente: May 31, 2021
+numpy==1.19.3 # version mas reciente: 1.22.2 - Feb 3, 2022
+oauth2client==4.1.2 # version mas reciente: 4.1.3 - Sep 7, 2018 puede que necesite ser cambiada
+oauthlib==3.2.0 # esta es la version mas reciente: Jan 29, 2022
+openapi-codec==1.3.2 # esta es la version mas reciente: Jul 19, 2017
+packaging==21.3 # esta es la version mas reciente: Nov 17, 2021
+pafy==0.5.5 # esta es la version mas reciente: Nov 22, 2019 puede que necesite ser cambiada
+pathlib==1.0.1 # esta es la version mas reciente: Sep 3, 2014
+phonenumbers==8.12.42 # version mas reciente: 8.12.44 - Feb 25, 2022
+phonenumberslite==8.12.42 # esta es la version mas reciente: 8.12.44 - Feb 25, 2022
+Pillow==9.0.1 # esta es la version mas reciente: Feb 2, 2022
+prompt-toolkit==3.0.27 # version mas reciente: 3.0.28 - Feb 11, 2022
+psycopg2-binary==2.9.3 # version mas reciente: 3.0.9 - Feb 19, 2022
+pyasn1==0.4.8 # esta es la version mas reciente: Nov 16, 2019 puede que necesite ser cambiada
+pyasn1-modules==0.2.8 # esta es la version mas reciente: Jan 9, 2020 puede que necesite ser cambiada
+pycparser==2.21 # esta es la version mas reciente: Nov 6, 2021
+pycryptodome==3.14.1 # esta es la version mas reciente: Feb 4, 2022
+PyHamcrest==2.0.3 # esta es la version mas reciente: Dec 12, 2021
+PyJWT==2.3.0 # esta es la version mas reciente: Oct 16, 2021
+pyOpenSSL==22.0.0 # esta es la version mas reciente: Jan 29, 2022
+pyparsing==3.0.7 # esta es la version mas reciente: Jan 21, 2022
+PyQt5==5.12.3 # version mas reciente: 5.15.6 - Oct 29, 2021
+PyQt5-sip==12.9.1 # esta es la version mas reciente: Feb 1, 2022
+PyQtWebEngine==5.12.1 # version mas reciente: 5.15.6 - Oct 18, 2021
+pyrsistent==0.18.1 # esta es la version mas reciente: Jan 14, 2022
+pyserial==3.5 # esta es la version mas reciente: Nov 22, 2020 puede que necesite ser cambiada
+PySocks==1.7.1 # esta es la version mas reciente: Sep 19, 2019 puede que necesite ser cambiada
+python-dateutil==2.8.2 # esta es la version mas reciente: Jul 14, 2021
+python-oauth2==1.1.1 # esta es la version mas reciente: Jun 28, 2019
+python-utils==3.1.0 # esta es la version mas reciente: Jan 14, 2022
+python3-openid==3.2.0 # esta es la version mas reciente: Jun 29, 2020
+pytz==2021.3 # esta es la version mas reciente: Oct 1, 2021
+pyxdg==0.27 # esta es la version mas reciente: Oct 18, 2020 puede que necesite ser cambiada
+PyYAML==6.0 # esta es la version mas reciente: Oct 13, 2021
+redis==4.1.2 # version mas reciente: 4.1.4 - Feb 16, 2022
+requests==2.27.1 # esta es la version mas reciente: Jan 5, 2022
+requests-oauthlib==1.3.1 # esta es la version mas reciente: Jan 29, 2022
+requests-unixsocket==0.3.0 # esta es la version mas reciente: Dec 23, 2021
+rsa==4.7 # version mas reciente: 4.8 - Nov 24, 2021
 ruamel.yaml==0.17.20
 ruamel.yaml.clib==0.2.6
 s3transfer==0.5.1
