@@ -1,5 +1,9 @@
 <p>
-  <a href="{% url 'learning_logs:index' %}">Learning Log</a>
+  <a href="{% url 'learning_logs:index' %}">Learning Log</a> -
+  <!-- learning_logs es la carpeta que contiene los templates de learning_logs e index es el nombre que se definio en el urls.py de la carpeta learning_logs -->
+  <!-- learning_logs es el namespace e index es el patron nombre url unico de ese namespace -->
+  <!-- el namespace proviene de la variable app_name que se definio en urls.py e index es tambien se definio ahi en el metodo path en el tercer argumento -->
+  <a href="{% url 'learning_logs:topics' %}">Topics</a>
 </p>
 
 {% block content %}{% endblock content %}
