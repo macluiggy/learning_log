@@ -1,5 +1,8 @@
 python -m venv ll_env 
 
+start the project:
+django-admin startproject project_name .
+
 2. Activate the virtual environment
 
 source ll_env/bin/activate

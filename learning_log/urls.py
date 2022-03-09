@@ -15,8 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+# import learning_logs.urls 
+import pizzas.urls as pizzas_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('learning_logs.urls')),
+    path('', include('learning_logs.urls')), # esto es como app.use('/', routes) en express
+    path('', include(pizzas_urls)),
 ]
