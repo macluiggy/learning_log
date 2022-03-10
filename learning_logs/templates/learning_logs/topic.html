@@ -1,0 +1,16 @@
+{% extends 'learning_logs/base.html' %} {% block content %}
+<p>Topic: {{topic}}</p>
+<p>Entries:</p>
+<ul>
+  {% for entry in entries %}
+  <li>
+    <p>{{ entry.date_added| date:'M d, Y H:i' }}</p>
+    <!-- formatea la fecha en el formato que se le pasa -->
+    <p>{{ entry.text| linebreaks }}</p>
+    <!-- formatea el texto en lineas -->
+  </li>
+  {% empty %}
+  <li>No entries have been added yet.</li>
+  {% endfor %}
+</ul>
+{% endblock content %}
