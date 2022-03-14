@@ -1,6 +1,6 @@
 from django.shortcuts import render ,redirect
 from .models import Topic
-from .forms import TopicForm
+from .forms import EntryForm, TopicForm
 
 # Create your views here.
 
@@ -38,3 +38,23 @@ def new_topic(request):
     # Display a blank or invalid form.
     context = {'form': form}
     return render(request, 'learning_logs/new_topic.html', context)
+
+def new_entry(request, topic_id):
+    """Add a new entry for a particular topic."""
+    topic = Topic.objects.get(id=topic_id)
+
+    if request.method != 'POST':
+        # No data submitted; create a blank form.
+        form = EntryForm()
+    else:
+        # POST data submitted; process data.
+        form = EntryForm(data=request.POST)
+        if form.is_valid():
+            new_entry = form.save(commit=False) # commit=False es para que no guarde el objeto en la base de datos, solo lo crea en memoria, para que luego se guarde en la base de datos.
+            new_entry.topic = topic # lo anterior es para poder asignarle el topic al nuevo objeto entry
+            new_entry.save() # ahora si, guarda el objeto en la base de datos
+            return redirect('learning_logs:topic', topic_id=topic_id) # redirecciona a la pagina de topic con el id del topic que se acaba de crear
+
+    # Display a blank or invalid form.
+    context = {'topic': topic, 'form': form}
+    return render(request, 'learning_logs/new_entry.html', context)
