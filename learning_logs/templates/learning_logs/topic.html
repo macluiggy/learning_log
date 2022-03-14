@@ -11,6 +11,10 @@
     <!-- formatea la fecha en el formato que se le pasa -->
     <p>{{ entry.text| linebreaks }}</p>
     <!-- formatea el texto en lineas -->
+    <p>
+      <a href="{% url 'learning_logs:edit_entry' entry.id %}">Edit</a>
+      <!-- formatea el texto en lineas -->
+    </p>
   </li>
   {% empty %}
   <li>No entries have been added yet.</li>
