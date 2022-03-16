@@ -4,6 +4,12 @@
   <!-- learning_logs es el namespace e index es el patron nombre url unico de ese namespace -->
   <!-- el namespace proviene de la variable app_name que se definio en urls.py e index es tambien se definio ahi en el metodo path en el tercer argumento -->
   <a href="{% url 'learning_logs:topics' %}">Topics</a>
+  {% if user.is_authenticated %}
+  Hello, {{ user.username }}
+  <a href="{% url 'users:logout' %}">Logout</a>
+  {% else %}
+  <a href="{% url 'users:login' %}">Log in</a>
+  {% endif %}
 </p>
 
 {% block content %}{% endblock content %}
