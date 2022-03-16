@@ -20,6 +20,7 @@ import pizzas.urls as pizzas_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('users/', include((((('users.urls', 'users'), 'users'), 'users'), 'users')), name='users'),
     path('', include('learning_logs.urls')), # esto es como app.use('/', routes) en express
     path('', include(pizzas_urls)),
 ]
