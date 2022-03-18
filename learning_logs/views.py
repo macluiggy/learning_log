@@ -1,5 +1,6 @@
 from django.shortcuts import render ,redirect
 from django.contrib.auth.decorators import login_required
+from django.http import Http404
 from .models import Topic, Entry
 from .forms import EntryForm, TopicForm
 
@@ -12,7 +13,10 @@ def index(request):
 @login_required # esto es un decorador, un decorador es una funcion que se ejecuta antes de que se ejecute la funcion que tiene abajo, esta sirve para alterar la funcion en cuestion, en este caso se usa @login_required para que solo los usuarios registrados puedan acceder a la funcion topics, si no estan logueados se redirecciona a la pagina de login
 def topics(request):
     """Show all topics."""
-    topics = Topic.objects.order_by('date_added')
+    topics = Topic.objects.filter(owner=request.user).order_by('date_added')
+    # Make sure the topic belongs to the current user.
+    # if topics.owner != request.user:
+    #     raise Http404
     # print(topics.all())
     context = {'topics': topics} # context es un diccionario que se va a pasar a la plantilla para que pueda ser usado en la plantilla, las keys son los nombres de las variables que se van a usar en la plantilla, en este caso topics, y los values son los valores son los datos que necesitamos pasar a la plantilla.
     return render(request, 'learning_logs/topics.html', context) # render toma dos argumentos, el request y el nombre del template, esta vela por la carpeta base: templates, entoces el path real es: __dirname/learning_logs/templates/learning_logs/topics.html
@@ -21,6 +25,7 @@ def topics(request):
 def topic(request, topic_id):
     """Show a single topic and all its entries."""
     topic = Topic.objects.get(id=topic_id)
+    check_topic_owner(topic, request)
     print(topic)
     entries = topic.entry_set.order_by('-date_added')
     context = {'topic': topic, 'entries': entries}
@@ -36,7 +41,9 @@ def new_topic(request):
         # POST data submitted; process data.
         form = TopicForm(data=request.POST)
         if form.is_valid(): # checkea que todos los datos esten disponibles y sean validos
-            form.save()
+            new_topic =  form.save(commit=False)
+            new_topic.owner = request.user
+            new_topic.save()
             return redirect('learning_logs:topics')
 
     # Display a blank or invalid form.
@@ -47,6 +54,7 @@ def new_topic(request):
 def new_entry(request, topic_id):
     """Add a new entry for a particular topic."""
     topic = Topic.objects.get(id=topic_id)
+    check_topic_owner(topic, request)
 
     if request.method != 'POST':
         # No data submitted; create a blank form.
@@ -69,6 +77,7 @@ def edit_entry(request, entry_id):
     """"Edit an existing entry."""
     entry = Entry.objects.get(id=entry_id)
     topic = entry.topic
+    check_topic_owner(topic, request)
 
     if request.method != 'POST':
         # Initial request; pre-fill form with the current entry.
@@ -82,3 +91,7 @@ def edit_entry(request, entry_id):
     
     context = {'entry': entry, 'topic': topic, 'form': form}
     return render(request, 'learning_logs/edit_entry.html', context)
+
+def check_topic_owner(topic, request):
+    if topic.owner != request.user:
+        raise Http404
